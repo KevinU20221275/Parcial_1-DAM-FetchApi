@@ -57,3 +57,28 @@ const fadeOutElements = () => {
 const renderMovie = (movie) => {
     $card.innerHTML = cardTemplate(movie);
 }
+
+// fetch movie data from the API by title
+const getMovie =  async (search) => {
+    try {
+        const res = await fetch(`${URL}?apikey=${API_KEY}&t=${search}`)
+        
+        const data = await res.json();
+
+        if (data.Response === 'True'){
+
+            // add animation fade out for elements
+            if ($card.innerHTML){
+                fadeOutElements(); 
+            }
+
+            setTimeout(() => {
+                renderMovie(formatMovieData(data));
+            }, ANIMATION_DURATION) 
+        } else {
+            renderMovie({title : "Movie not found", year : "Sorry, we couldn't find your movie.", poster : "assets/img/badMovieRes.png", description : "No results found. Please try again or contact us to request this movie."})
+        }
+    } catch (e) {
+        renderMovie({title : "Something went wrong", year: "Please try again later." , poster : "assets/img/badMovieRes.png", description : "If the problem persists, please contact us."})
+    }
+}
