@@ -82,3 +82,6 @@ const getMovie =  async (search) => {
         renderMovie({title : "Something went wrong", year: "Please try again later." , poster : "assets/img/badMovieRes.png", description : "If the problem persists, please contact us."})
     }
 }
+
+// initialize app with a default movie
+getMovie("inception")
