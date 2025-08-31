@@ -37,25 +37,25 @@ App Screenshots:
 
   <div style="text-align: center;">
     <h4>Default load</h4>
-    <img src="docs/screenshots/default.png" alt="Default Movie" width="300">
+    <img src="docs/screenshots/default.png" alt="Default Movie" width="250">
     <p>App opens with the initial movie displayed.</p>
   </div>
 
   <div style="text-align: center;">
     <h4>Movie Found</h4>
-    <img src="docs/screenshots/success.png" alt="Movie Found" width="300">
+    <img src="docs/screenshots/success.png" alt="Movie Found" width="250">
     <p>Successful search showing movie details.</p>
   </div>
 
   <div style="text-align: center;">
     <h4>Not Found</h4>
-    <img src="docs/screenshots/not-found.png" alt="Not Found" width="300">
+    <img src="docs/screenshots/not-found.png" alt="Not Found" width="250">
     <p>Shows placeholder when no results are found.</p>
   </div>
 
   <div style="text-align: center;">
     <h4>Error</h4>
-    <img src="docs/screenshots/error.png" alt="Error" width="300">
+    <img src="docs/screenshots/error.png" alt="Error" width="250">
     <p>Displayed when the API request fails.</p>
   </div>
 
