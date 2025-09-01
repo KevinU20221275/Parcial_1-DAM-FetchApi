@@ -33,34 +33,25 @@ git clone https://github.com/KevinU20221275/Parcial_1-DAM-FetchApi.git
 
 App Screenshots:
 
-<div style="display: flex; flex-wrap: wrap; justify-content:center; gap: 20px;">
+### Default load
+App opens with the initial movie displayed.
 
-  <div style="text-align: center;">
-    <h4>Default load</h4>
-    <img src="docs/screenshots/default.png" alt="Default Movie" width="250">
-    <p>App opens with the initial movie displayed.</p>
-  </div>
+![Default Movie](docs/screenshots/default.png)
 
-  <div style="text-align: center;">
-    <h4>Movie Found</h4>
-    <img src="docs/screenshots/success.png" alt="Movie Found" width="250">
-    <p>Successful search showing movie details.</p>
-  </div>
+### Movie Found
+Successful search showing movie details.
 
-  <div style="text-align: center;">
-    <h4>Not Found</h4>
-    <img src="docs/screenshots/not-found.png" alt="Not Found" width="250">
-    <p>Shows placeholder when no results are found.</p>
-  </div>
+![Movie Found](docs/screenshots/success.png)
 
-  <div style="text-align: center;">
-    <h4>Error</h4>
-    <img src="docs/screenshots/error.png" alt="Error" width="250">
-    <p>Displayed when the API request fails.</p>
-  </div>
+### Movie Not Found
+Shows placeholder when no results are found.
 
-</div>
+![Not Found](docs/screenshots/not-found.png)
 
+### Error
+Displayed when the API request fails.
+
+![Error](docs/screenshots/error.png)
 
 ## Notes
 - The app initializes with "Inception" as the default movie.
